@@ -1,25 +1,6 @@
 /*
- * blink.c:
- *	Standard "blink" program in wiringPi. Blinks an LED connected
- *	to the first GPIO pin.
- *
- * Copyright (c) 2012-2013 Gordon Henderson. <projects@drogon.net>
- ***********************************************************************
- * This file is part of wiringPi:
- *	https://projects.drogon.net/raspberry-pi/wiringpi/
- *
- *    wiringPi is free software: you can redistribute it and/or modify
- *    it under the terms of the GNU Lesser General Public License as published by
- *    the Free Software Foundation, either version 3 of the License, or
- *    (at your option) any later version.
- *
- *    wiringPi is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU Lesser General Public License for more details.
- *
- *    You should have received a copy of the GNU Lesser General Public License
- *    along with wiringPi.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * This is not finished, use the python version instead.
  ***********************************************************************
  */
 
@@ -35,9 +16,10 @@ int timerStart = 0;
 
 void interruptHandler(void)
 {
+	//printf("interrupt!S"); fflush (stdout);
 	int now = micros();
 	int delay = now - timerStart;
-	printf("%d", delay);	
+	printf("%f\n", delay / 58.0);	fflush (stdout); 
 	
 	//cm = pulseIn(PECHO, HIGH) / 58.0; //Echo time convert to cm
 	//cm = (int(cm * 100.0)) / 100.0; //Keep two decimal places
@@ -50,22 +32,25 @@ int main(void)
 
 	wiringPiSetupGpio();
 	pinMode(PTRIG, OUTPUT);
-	pinMode(PECHO, INPUT);
-	pullUpDnControl(PECHO,PUD_DOWN);
+	//pinMode(PECHO, INPUT);
+	//pullUpDnControl(PECHO,PUD_DOWN);
 	wiringPiISR(PECHO, INT_EDGE_RISING, &interruptHandler);
-  	
+  	printf("callback registered\n");
 
 
-	digitalWrite(PTRIG, LOW); //Send a voltage pulse to TrigPin
-	delayMicroseconds(2);
-	digitalWrite(PTRIG, HIGH);
-	delayMicroseconds(10);
-	timerStart = micros();
-	digitalWrite(PTRIG, LOW);
+
 	
 	
 	for(;;)
 	{
+	digitalWrite(PTRIG, LOW); //Send a voltage pulse to TrigPin
+	delayMicroseconds(2);
+	digitalWrite(PTRIG, HIGH);
+	delayMicroseconds(10);
+	digitalWrite(PTRIG, LOW);
+	timerStart = micros();
+	
+	delay(200);
 		
 	}
 
