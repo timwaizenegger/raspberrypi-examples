@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+this script demos the graphic character LCD with 4 Buttons.
+it requires the RPLCD module. install with:
+sudo pip install RPLCD
+
+"""
+
 from __future__ import print_function, division, absolute_import, unicode_literals
 
 import sys
