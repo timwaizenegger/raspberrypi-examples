@@ -1,0 +1,12 @@
+update the linux software with
+>sudo apt-get update
+>sudo apt-get dist-upgrade
+
+update the firmware with
+>sudo rpi-update
+
+
+enable HDMI signal boost for longer cables:
+set in /boot/config.txt:
+config_hdmi_boost=6
+values between 0 and 7 (4 is default)
