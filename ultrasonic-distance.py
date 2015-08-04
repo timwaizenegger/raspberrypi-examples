@@ -27,10 +27,13 @@ def getValue():
 	GPIO.output(ptrig, 0)
 	
 	
-	GPIO.wait_for_edge(pecho,GPIO.RISING)
-	start = time.time()
-	GPIO.wait_for_edge(pecho,GPIO.FALLING)
-	delay = (time.time() - start) * 1000 * 1000
+	while(0 == GPIO.input(pecho)):
+		start = time.time()
+	while(1 == GPIO.input(pecho)):
+		end = time.time()
+		
+
+	delay = (end - start) * 1000 * 1000
 	time.sleep(0.1)
 	print("distance: %0.1f cm" % (delay / 58.0))
 
