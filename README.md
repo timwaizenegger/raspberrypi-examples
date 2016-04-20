@@ -8,7 +8,12 @@ Each Folder contains an example script, picture, and additional information abou
 ### Sensors
 * [Linksprite button](sensor-linksprite-button)
 * [Ultrasonic distance sensor](sensor-ultrasonic-distance)
-* [Linksprite analog converter](sensor-linksprite-ADconverter) for reading data from analog sensors linke: temperature, light, noise, acceleration, moisture, ...
+* [Linksprite analog converter](sensor-linksprite-ADconverter) for reading data from analog sensors linke: 
+** temperature, 
+** light, 
+** noise, 
+** acceleration, 
+** moisture
 * [HD camera](sensor-HD-camera)
 
 
@@ -22,4 +27,4 @@ Each Folder contains an example script, picture, and additional information abou
 
 
 ## Example applications
-[example-applications](example-applications/) contains some scripts that "actually do something
+[example-applications](example-applications/) contains some scripts that "actually do something"
