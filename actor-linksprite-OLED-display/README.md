@@ -12,6 +12,8 @@ linksprite OLED board
 ## get it running
 
 use "raspi-config" to enable I2C interface
+
+
     git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
     cd Adafruit_Python_SSD1306
     sudo setup.py install
