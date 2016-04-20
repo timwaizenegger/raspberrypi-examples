@@ -9,11 +9,11 @@ Each Folder contains an example script, picture, and additional information abou
 * [Linksprite button](sensor-linksprite-button)
 * [Ultrasonic distance sensor](sensor-ultrasonic-distance)
 * [Linksprite analog converter](sensor-linksprite-ADconverter) for reading data from analog sensors linke: 
-** temperature, 
-** light, 
-** noise, 
-** acceleration, 
-** moisture
+  * temperature, 
+  * light, 
+  * noise, 
+  * acceleration, 
+  * moisture
 * [HD camera](sensor-HD-camera)
 
 
