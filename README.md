@@ -10,4 +10,4 @@ Each Folder contains an example script, picture, and additional information abou
 
 
 ## Example applications
-[example-applications](example-applications/) contains some scripts that "actually do something"
+[example-applications](example-applications/) contains some scripts that "actually do something
