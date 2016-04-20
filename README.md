@@ -23,6 +23,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Linksprite 7-segment 4-number LED display](actor-led-7segment-4numbers)
 * [HD color TFT display](actor-graphic-TFT-display)
 * [Alphanumeric display board with 4 buttons](actor-alphanumeric-display-board)
+* [Linksprite 128x64 blue OLED display](actor-linksprite-OLED-display)
 
 
 
