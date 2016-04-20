@@ -5,8 +5,14 @@ Each Folder contains an example script, picture, and additional information abou
 
 ## List of devices
 
-* [Linksprite button](actor-linksprite-button)
+### Sensors
+* [Linksprite button](sensor-linksprite-button)
+* [Ultrasonic distance sensor](sensor-ultrasonic-distance)
 * Linksprite analog temperature sensor
+
+### Actors
+* [Linksprite dumb buzzer](actor-linksprite-buzzer)
+
 
 
 ## Example applications
