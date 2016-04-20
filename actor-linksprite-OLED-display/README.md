@@ -22,3 +22,7 @@ use "raspi-config" to enable I2C interface
     
     cd examples
     python image.py
+
+
+
+![image](pic1.JPG)
