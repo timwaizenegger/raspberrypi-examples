@@ -4,8 +4,9 @@
 * [SD card reset](#sd-card-reset)
 * [SO issue solving](#issue-solving)
 
-## [Install] (https://www.raspberrypi.org/documentation/installation/noobs.md)
+## Install
 
+This guide is also found [here](https://www.raspberrypi.org/documentation/installation/noobs.md).
 * [Download NOOBS offline and network install] (https://www.raspberrypi.org/downloads/noobs/)
 * Format a microSD (at least 4GB) on **FAT32**
 * Unzip the content of the downloaded file on the card. The card content should look like:
@@ -29,8 +30,9 @@
  * `sudo rpi-update`
  * `reboot`
 
-## [SD card reset] (http://kb.sandisk.com/app/answers/detail/a_id/14827/~/using-sd-formatter-tool-to-restore-full-capacity-on-sdhc%2Fsdxc-cards)
+## SD card reset
 
+This guide is also found [here](http://kb.sandisk.com/app/answers/detail/a_id/14827/~/using-sd-formatter-tool-to-restore-full-capacity-on-sdhc%2Fsdxc-cards).
 * [Download SD Formatter Tool] (https://www.sdcard.org/downloads/formatter_4/) (scroll to the bottom of the page)
 * Install the application
 * With the SD card plugged, open the application
@@ -41,7 +43,9 @@
 
 ## Issue Solving
 
-### [Display resolution problem](http://weblogs.asp.net/bleroy/getting-your-raspberry-pi-to-output-the-right-resolution)
+### Display resolution problem
+
+This resolution is also found [here](http://weblogs.asp.net/bleroy/getting-your-raspberry-pi-to-output-the-right-resolution).
 * Open the terminal (`ctrl + alt + T`)
 * Do the following commands (type `y` for the incoming questions after each command):
  * `tvservice -d edid`
