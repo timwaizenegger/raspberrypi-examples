@@ -1,4 +1,9 @@
-# [Raspbian NOOBS SO installation] (https://www.raspberrypi.org/documentation/installation/noobs.md)
+# List of contents
+* Raspbian (OS) install
+* Updates
+* SD card reset
+
+## [Raspbian NOOBS SO installation] (https://www.raspberrypi.org/documentation/installation/noobs.md)
 
 * [Download NOOBS offline and network install] (https://www.raspberrypi.org/downloads/noobs/)
 * Format a microSD (at least 4GB) on **FAT32**
