@@ -1,8 +1,8 @@
 # List of contents
-* [Raspbian (OS) install](#Install)
-* [Updates](#Update)
-* [SD card reset](#SD card reset)
-* [SO issue solving](#Issue Solving)
+* [Raspbian (OS) install](#install)
+* [Updates](#update)
+* [SD card reset](#sd-card-reset)
+* [SO issue solving](#issue-solving)
 
 ## [Install] (https://www.raspberrypi.org/documentation/installation/noobs.md)
 
