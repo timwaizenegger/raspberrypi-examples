@@ -7,6 +7,7 @@
 * Plug the card and plug the power on the Raspberry (in that order)
 * When the loading is complete, select the *Raspbian* option and click on Install
 ![RASPBIAN INSTALL](http://puu.sh/oxBd5/41d7f3c3cf.png)
+* Wait until the installation is finished and the OS is ready
 
 ## [SD card resetting] (http://kb.sandisk.com/app/answers/detail/a_id/14827/~/using-sd-formatter-tool-to-restore-full-capacity-on-sdhc%2Fsdxc-cards)
 
