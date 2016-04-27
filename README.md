@@ -3,6 +3,9 @@ This repo contains example code for various RPi Sensors/Actors used in IoT proje
 
 Each Folder contains an example script, picture, and additional information about one device
 
+## System setup
+[Setup tutorials](setup-raspberrypi) contains information for installing, updating, reseting and issue solving on the OS Raspbian.
+
 ## List of devices
 
 ### Sensors
