@@ -41,7 +41,7 @@
 
 ## Issue Solving
 
-### [Resolution problem](http://weblogs.asp.net/bleroy/getting-your-raspberry-pi-to-output-the-right-resolution)
+### [Display resolution problem](http://weblogs.asp.net/bleroy/getting-your-raspberry-pi-to-output-the-right-resolution)
 * Open the terminal (`ctrl + alt + T`)
 * Do the following commands (type `y` for the incoming questions after each command):
  * `tvservice -d edid`
