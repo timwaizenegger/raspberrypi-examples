@@ -72,9 +72,12 @@ This resolution is based on this [link](http://www.willprice.org/2014/03/17/edur
    ![Right Click](right_click.png) 
 
 * Then you will find the reference to the eduroam network:
-* And will change it to:
- *
-* Then save and run sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -B
+   ![select](select.png) 
+* And change the identity and the password:
+   ![change](change.png) 
+* If your not in University of Stuttgart you should change the first block following your university configurarion.
+* Do NOT change the information in the second block.
+* After that save the file and run `sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -B`
 * Your connection should work!
  
  
