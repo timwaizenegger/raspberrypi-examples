@@ -1,19 +1,20 @@
 # List of contents
 * [Raspbian (OS) install](#install)
 * [Updates](#update)
+* [SSH Access](#ssh-access)
 * [SD card reset](#sd-card-reset)
 * [SO issue solving](#issue-solving)
 
 ## Install
 
 This guide is also found [here](https://www.raspberrypi.org/documentation/installation/noobs.md).
-* [Download NOOBS offline and network install] (https://www.raspberrypi.org/downloads/noobs/)
+* [Download NOOBS offline and network install](https://www.raspberrypi.org/downloads/noobs/)
 * Format a microSD (at least 4GB) on **FAT32**
 * Unzip the content of the downloaded file on the card. The card content should look like:
-![SD card content](http://puu.sh/oxzVl/5d7b1abb67.png)
+![SD card content](images/noobfiles.png)
 * Plug the card and plug the power on the Raspberry (in that order)
 * When the loading is complete, select the *Raspbian* option and click on Install
-![RASPBIAN INSTALL](http://puu.sh/oxBd5/41d7f3c3cf.png)
+![RASPBIAN INSTALL](images/raspinstall.png)
 * Wait until the installation is finished and the OS is ready
 
 ## Update
@@ -30,15 +31,30 @@ This guide is also found [here](https://www.raspberrypi.org/documentation/instal
  * `sudo rpi-update`
  * `reboot`
 
+## SSH Access
+
+This guide is also found [here](https://www.raspberrypi.org/documentation/remote-access/ssh/).
+SSH is already enabled on RaspberryPi by default.
+To access, you will need to check the RaspberryPi IP. That can be done through the terminal with on of the following commands (`eth0` stands for your ethernet interface IP and`wlan0` for your wireless interface IP):
+* `sudo ifconfig -a`
+* `sudo ip addr show`
+* `sudo hostname --ip-address`
+The default *username* is `pi` and the default *password* is `raspberry`.
+If the SSH is **not enabled**, you can enable through:
+* Run `sudo raspi-config` on the terminal
+* Navigate to `9 Advanced Options`
+* Navigate to `A4 SSH`
+* Select `Enable`
+
 ## SD card reset
 
 This guide is also found [here](http://kb.sandisk.com/app/answers/detail/a_id/14827/~/using-sd-formatter-tool-to-restore-full-capacity-on-sdhc%2Fsdxc-cards).
-* [Download SD Formatter Tool] (https://www.sdcard.org/downloads/formatter_4/) (scroll to the bottom of the page)
+* [Download SD Formatter Tool](https://www.sdcard.org/downloads/formatter_4/) (scroll to the bottom of the page)
 * Install the application
 * With the SD card plugged, open the application
 * Go to *Option*, change *FORMAT SIZE ADJUSTMENT* to *ON*
-![OPTION BUTTON](http://kb.sandisk.com/euf/assets/images/faqs/14827/kb14827_1.png)
-![FORMAT SIZE ADJUSTMENT](http://kb.sandisk.com/euf/assets/images/faqs/14827/kb14827_2.png)
+![OPTION BUTTON](images/sdresetoption.png)
+![FORMAT SIZE ADJUSTMENT](images/sdresetformatsize.png)
 * Click on *Format*
 
 ## Issue Solving
