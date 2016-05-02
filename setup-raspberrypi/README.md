@@ -64,9 +64,6 @@ This resolution is based on this [link](http://www.willprice.org/2014/03/17/edur
  * `sudo service networking stop`
 * Now acces the file `wpa_supplicant.conf` as administrator: 
  * You can open it on terminal with the command `sudo leafpad /etc/wpa_supplicant/wpa_supplicant.conf`
- 
-   ![Command Line](command_line.png)
-
  * Or you go to the folder `/etc/wpa_supplicant/`, right click on `wpa_supplicant.conf` and choose `Open With`. Change the tab from `Installed Applications` to `Custom Command Line` and write `sudo leafpad`:
   
    ![Right Click](right_click.png) 
