@@ -7,7 +7,6 @@ import time
 
 lkbuttonPin = 27 # button connected to D26/D27
 
-
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(lkbuttonPin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
