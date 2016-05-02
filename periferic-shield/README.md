@@ -6,4 +6,4 @@ The numbers disposed in the schema above are needed to inform to a given program
 
 ![schema](images/schema2.jpg)
 
-![schema](images/description.jpg)
+![schema](images/description.png)
