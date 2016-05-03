@@ -4,6 +4,7 @@
 * [SSH Access](#ssh-access)
 * [SD card reset](#sd-card-reset)
 * [SO issue solving](#issue-solving)
+* [Eduroam wlan config](#eduroam)
 
 ## Install
 
@@ -71,3 +72,41 @@ This resolution is also found [here](http://weblogs.asp.net/bleroy/getting-your-
 * Uncomment the following lines and put those values (If your mode description from the last command contains “DMT”, the group should be 2, and if it contains “CEA”, it should be 1):
   * `hdmi_group=2`
   * `hdmi_mode=82`
+
+## Eduroam
+This resolution is based on this [link](http://www.willprice.org/2014/03/17/eduroam-on-the-raspberry-pi.html)
+* Open the terminal (`ctrl + alt + T`)
+* Do the following command to stop the network on Raspberry: 
+ * `sudo service networking stop`
+* Now acces the file `wpa_supplicant.conf` as administrator: 
+ * You can open it on terminal with the command `sudo leafpad /etc/wpa_supplicant/wpa_supplicant.conf`
+ * Or you go to the folder `/etc/wpa_supplicant/`, right click on `wpa_supplicant.conf` and choose `Open With`. Change the tab from `Installed Applications` to `Custom Command Line` and write `sudo leafpad`:
+  
+   ![Right Click](right_click.png) 
+
+* Then you will find the reference to the eduroam network and change it to :
+  * 
+   `network={
+    identity="ab1234"
+    password="myUOBpassword"
+    ca_cert="/etc/ssl/certs/Deutsche_Telekom_Root_CA_2.pem"
+    eap=PEAP TTLS
+    anonymous_identity="@"
+    phase1="peaplabel=0"
+    phase2="auth=MSCHAPV2"
+    priority=999
+    disabled=0
+    ssid="eduroam"
+    scan_ssid=0
+    mode=0
+    auth_alg=OPEN
+    proto=WPA RSN
+    pairwise=CCMP TKIP
+    key_mgmt=WPA-EAP
+    proactive_key_caching=1
+}`
+* Change your identity and password and save the file.
+* After, run `sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -B`
+* Your connection should work!
+ 
+ 
