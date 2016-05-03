@@ -5,6 +5,7 @@
 * [SD card reset](#sd-card-reset)
 * [SO issue solving](#issue-solving)
 * [Eduroam wlan config](#eduroam)
+* [VPN IPVS](#vpn-ipvs)
 
 ## Install
 
@@ -109,4 +110,7 @@ This resolution is based on this [link](http://www.willprice.org/2014/03/17/edur
 * After, run `sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -B`
 * Your connection should work!
  
- 
+## VPN IPVS
+* [Download Cisco AnyConnect Secure Mobility Client](http://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client/tsd-products-support-series-home.html)
+* Install and connect to: `asa1.informatik.uni-stuttgart.de`
+* Use your IPVS username/password
