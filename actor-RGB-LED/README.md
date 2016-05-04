@@ -1,4 +1,4 @@
-linksprite OLED board
+Linker-Kit RGB Led
 
 * RGB
 * 8mm
