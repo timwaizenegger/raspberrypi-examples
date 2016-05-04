@@ -1,4 +1,6 @@
-Linker-Kit RGB Led
+##Linker-Kit RGB Led
+
+![image](rgbled.jpg)
 
 * RGB
 * 8mm
