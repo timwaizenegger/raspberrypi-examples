@@ -8,6 +8,12 @@ linksprite OLED board
 
 ## get it running
 
+Connect the RGB led on pin 12:
+
+![image](pic2.jpg)
+
+Then:
+
     git clone https://github.com/jgarff/rpi_ws281x.git
     cd rpi_ws281x.git
     sudo scons
