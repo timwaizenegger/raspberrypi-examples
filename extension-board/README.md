@@ -1,7 +1,12 @@
-To read analog values, you need to enable SPI. You can find how to in [this README](../setup-raspberrypi/README.md).
+To read analog values, you need to enable SPI.
+
+You can find how to in [this README](../setup-raspberrypi/README.md).
+
+
 Two version of the board have been used:
 * [First version](#first-used-board-version)
 * [Second version](#second-used-board-version)
+
 Also, is given a list of [sensors](#sensors-include).
 
 ## First used board version
