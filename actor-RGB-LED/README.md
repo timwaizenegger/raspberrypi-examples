@@ -19,4 +19,4 @@ linksprite OLED board
 
 
 
-![image](pic1.JPG)
+![image](pic1.jpg)
