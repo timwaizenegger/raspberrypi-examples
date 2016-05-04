@@ -12,9 +12,8 @@ import spidev
 xPin = 0 # joystick x connected to A0
 yPin = 1 # joystick y connected to A1
 
-tolerancevalue = 10
-xZero = 512
-yZero = 512
+xzero = 512
+yzero = 512
 
 spi = spidev.SpiDev()
 spi.open(0,0)
@@ -28,34 +27,22 @@ def readadc(adcnum):
 	adcout = ((r[1] &3) << 8) + r[2]
 	return adcout
 
-def position(adcnum, zerovalue):
-	return readadc(adcnum) - zerovalue
+def position(value, zerovalue):
+	return value - zerovalue
 
 while True:
-	xPos = position(xPin, xZero)
-	yPos = position(yPin, yZero)
+	value = readadc(xPin)
+	posx = position(value, xzero)
+	print("x: %4d/1023 => %5d" % (value, posx))
+	value = readadc(yPin)
+	posy = position(value, yzero)
+	print("y: %4d/1023 => %5d" % (value, posy))
 
-	if (xPos > (1023 * 3/4)):
+	if (posx > (1023 * 3/4)):
 		print("Button pressed!")
-	elif (abs(xPos) < tolerancevalue):
-		print("Not moving in X.")
-	elif (xPos > 0):
-		print("Moving ahead.")
-		print("X intensity: %5d" % abs(xPos))
-	else:
-		print("Moving backwards.")
-		print("X intensity: %5d" % abs(xPos))
-
-	if (abs(yPos) < tolerancevalue):
-		print("Not moving in Y.")
-	elif (yPos > 0):
-		print("Moving left.")
-		print("Y intensity: %5d" % abs(yPos))
-	else:
-		print("Moving right.")
-		print("Y intensity: %5d" % abs(yPos))
-		
 	print("")
 	time.sleep(0.5)
+
+
 
 print('done.')
