@@ -12,6 +12,7 @@ linksprite OLED board
     cd rpi_ws281x.git
     sudo scons
     cd python
+    sudo python ez_setup.py
     sudo python setup.py install
     
     cd examples
