@@ -1,6 +1,7 @@
 # List of contents
 * [Raspbian (OS) install](#install)
 * [Updates](#update)
+* [SPI enable](#spi-enable)
 * [SSH Access](#ssh-access)
 * [SD card reset](#sd-card-reset)
 * [SO issue solving](#issue-solving)
@@ -32,6 +33,23 @@ This guide is also found [here](https://www.raspberrypi.org/documentation/instal
 * Do the following commands (type `y` for the incoming questions after each command):
  * `sudo rpi-update`
  * `reboot`
+
+## SPI Enable
+This guide is also found [here](http://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/).
+* Run `sudo raspi-config` on the terminal
+* Navigate to `9 Advanced Options`
+* Navigate to `A5 SPI`
+* Select `Enable`
+* Select `Yes` when asked about the kernel module
+* Select `Yes` when asked to reboot the system
+You can check if it's enable through the command on the terminal:
+`lsmod | grep spi_`
+You should see “spi_bcm2708″ or “spi_bcm2835”
+To check if the library is available for python:
+`apt-mark showauto | grep spi`
+You should see the two python spidev packages listed in the output.
+
+
 
 ## SSH Access
 
