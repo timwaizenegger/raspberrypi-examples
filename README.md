@@ -8,6 +8,9 @@ Each Folder contains an example script, picture, and additional information abou
 
 ## List of devices 
 
+### Extension board
+You can find info about it and AD converter [here](extension-board) (same as analog converter listed below).
+
 ### Sensors
 * [Linksprite button](sensor-linksprite-button)
 * [Ultrasonic distance sensor](sensor-ultrasonic-distance)
