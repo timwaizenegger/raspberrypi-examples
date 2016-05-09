@@ -18,8 +18,8 @@ Each Folder contains an example script, picture, and additional information abou
 
 
 ### Sensors
-* [Linksprite and LK button](sensor-button)
-* [Linksprite thumb joystick](sensor-thumb-joystick)
+* [Buttons](sensor-button)
+* [Thumb joystick](sensor-thumb-joystick)
 * [Ultrasonic distance sensor](sensor-ultrasonic-distance)
 * [HD camera](sensor-HD-camera)
 
