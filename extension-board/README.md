@@ -33,6 +33,7 @@ The numbers disposed in the schema above are needed to inform to a given program
 * noise level
 * 3-axis accelerometer
 
+
 * `analogIn.py` shows how to read the values
 * `analogInputDemo` display all 4 values in real time; useful for test/debug 
 
