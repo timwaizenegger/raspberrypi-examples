@@ -34,12 +34,13 @@ The numbers disposed in the schema above are needed to inform to a given program
 * 3-axis accelerometer
 
 
-* `analogIn.py` shows how to read the values
-* `analogInputDemo` display all 4 values in real time; useful for test/debug 
-
 For the temperature sensor, use this python code to convert raw values to degrees celsius:
 
     temp = (((value * 1000) - 500)/10)
+    
+
+* `analogIn.py` shows how to read the values
+* `analogInputDemo` display all 4 values in real time; useful for test/debug 
 
 ![image of device](images/sensor1.JPG)
 ![image of device](images/sensor2.JPG)
