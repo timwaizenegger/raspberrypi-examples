@@ -17,9 +17,6 @@ The linksprite board has a 4-channel analog-to-digital converter. You need to us
 
 *Note* that the board has a jumper to set VCC to 3.3V or 5V. Some devices will not work if it's the wrong setting...
 
-* `analogIn.py` shows how to read the values
-* `analogInputDemo` display all 4 values in real time; useful for test/debug 
-
 ## Second used board version
 ![boardv2](images/boardv2.jpg)
 
@@ -35,6 +32,9 @@ The numbers disposed in the schema above are needed to inform to a given program
 * light
 * noise level
 * 3-axis accelerometer
+
+* `analogIn.py` shows how to read the values
+* `analogInputDemo` display all 4 values in real time; useful for test/debug 
 
 For the temperature sensor, use this python code to convert raw values to degrees celsius:
 
