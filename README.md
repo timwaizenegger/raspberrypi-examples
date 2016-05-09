@@ -6,17 +6,21 @@ Each Folder contains an example script, picture, and additional information abou
 ## System setup
 [Setup tutorials](setup-raspberrypi) contains information for installing, updating, reseting and issue solving on the OS Raspbian.
 
-## List of devices
+## List of devices 
 
-### Sensors
-* [Linksprite button](sensor-linksprite-button)
-* [Ultrasonic distance sensor](sensor-ultrasonic-distance)
-* [Linksprite analog converter](sensor-linksprite-ADconverter) for reading data from analog sensors linke: 
+### Extension board
+* [Linksprite analog converter](extension-board) for data about the board and reading data from analog sensors linke:
   * temperature, 
   * light, 
   * noise, 
   * acceleration, 
   * moisture
+
+
+### Sensors
+* [Buttons](sensor-button)
+* [Thumb joystick](sensor-thumb-joystick)
+* [Ultrasonic distance sensor](sensor-ultrasonic-distance)
 * [HD camera](sensor-HD-camera)
 
 
