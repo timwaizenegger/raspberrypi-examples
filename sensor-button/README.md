@@ -7,7 +7,6 @@ This contains info about several buttons:
 
 Code example [here](button.py).
 
-[Linksprite button](button.py) (dual buttons):
 ![image of device](images/pic1.JPG)
 
 ## LK Button
