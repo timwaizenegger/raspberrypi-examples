@@ -9,17 +9,18 @@ Each Folder contains an example script, picture, and additional information abou
 ## List of devices 
 
 ### Extension board
-You can find info about it and AD converter [here](extension-board) (same as analog converter listed below).
-
-### Sensors
-* [Linksprite button](sensor-linksprite-button)
-* [Ultrasonic distance sensor](sensor-ultrasonic-distance)
-* [Linksprite analog converter](extension-board) for reading data from analog sensors linke: 
+* [Linksprite analog converter](extension-board) for data about the board and reading data from analog sensors linke:
   * temperature, 
   * light, 
   * noise, 
   * acceleration, 
   * moisture
+
+
+### Sensors
+* [Linksprite and LK button](sensor-button)
+* [Linksprite thumb joystick](sensor-thumb-joystick)
+* [Ultrasonic distance sensor](sensor-ultrasonic-distance)
 * [HD camera](sensor-HD-camera)
 
 
