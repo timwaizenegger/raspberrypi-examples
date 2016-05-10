@@ -2,7 +2,7 @@ this is the manual/dumb buzzer. it's only a speaker so you need to feed it a wav
 
 ![image of device](pic1.JPG)
 
-Below we have the Aktives and Passsives Buzzer
+Below we have the Active and Passive Buzzer
 
 ![image of device](pic2.jpg)
 
