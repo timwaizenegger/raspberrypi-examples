@@ -32,7 +32,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [HD color TFT display](actor-graphic-TFT-display)
 * [Alphanumeric display board with 4 buttons](actor-alphanumeric-display-board)
 * [Linksprite 128x64 blue OLED display](actor-linksprite-OLED-display)
-* [Linksprite RGB-LED](actor-RGB-LED)
+* [RGB-LED](actor-RGB-LED)
 
 
 
