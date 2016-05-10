@@ -15,7 +15,7 @@ Each Folder contains an example script, picture, and additional information abou
   * noise, 
   * acceleration, 
   * moisture
-  * rotary potentiometer
+  * potentiometer
 
 
 ### Sensors
