@@ -32,7 +32,7 @@ The numbers disposed in the schema above are needed to inform to a given program
 * light
 * noise level
 * 3-axis accelerometer
-* Rotary Ptentiometer
+* Rotary Potentiometer
 
 
 For the temperature sensor, use this python code to convert raw values to degrees celsius:
