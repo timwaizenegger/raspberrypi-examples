@@ -2,7 +2,7 @@
 
 ![ky032](images/ky032.jpg)
 
-The *pins need to be remaped* for the extension board, where (`sensor: board`) - following the [example code](touch.py):
+The *pins need to be remaped* for the extension board, where (`sensor: board`) - following the [example code](obstacle.py):
 * GND:	G
 * +:	V
 * out:	D15
