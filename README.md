@@ -1,5 +1,5 @@
 # Uni Stuttgart IPVS/AS IoT examples
-This repo contains example code for various RPi Sensors/Actors used in IoT project at the University of Stuttgart, IPVS/AS
+This repo contains example code for various RPi Sensors/Actors used in IoT projects at the University of Stuttgart, IPVS/AS
 
 Each Folder contains an example script, picture, and additional information about one device
 
