@@ -1,4 +1,4 @@
-## Sensor KY-036
+## Sensor KY-036: Touch sensor
 
 ![ky036](images/ky036.jpg)
 

@@ -24,6 +24,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Ultrasonic distance sensor](sensor-ultrasonic-distance)
 * [HD camera](sensor-HD-camera)
 * [Touch](sensor-touch)
+* [Flame](sensor-flame)
 
 ### Actors
 * [Linksprite dumb buzzer](actor-linksprite-buzzer)
