@@ -27,6 +27,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Flame](sensor-flame)
 * [Obstacle Avoidance](sensor-obstacle)
 * [Vibration](sensor-vibration)
+* [Tilt](sensor-tilt)
 
 ### Actors
 * [Linksprite dumb buzzer](actor-linksprite-buzzer)
