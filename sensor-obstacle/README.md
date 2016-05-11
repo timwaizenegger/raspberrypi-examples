@@ -8,6 +8,7 @@ The *pins need to be remaped* for the extension board, where (`sensor: board`) -
 * out:	D15
 * EN:	D16
 
+Pins:
 * GND – should be connected to ground
 * + – should be connected to 5V power supply
 * out – obstacle signal
