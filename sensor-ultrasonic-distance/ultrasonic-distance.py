@@ -7,8 +7,8 @@ import RPi.GPIO as GPIO
 import time
 
 
-ptrig = 17
-pecho = 18
+ptrig = 26
+pecho = 27
 
 def setup():
 	GPIO.setwarnings(False)
@@ -35,7 +35,9 @@ def getValue():
 
 	delay = (end - start) * 1000 * 1000
 	time.sleep(0.1)
-	print("distance: %0.1f cm" % (delay / 58.0))
+	distance = (delay / 58.0)
+	if 2 < distance < 400: # working interval
+		print("distance: %0.1f cm" % distance)
 
 
 setup()
