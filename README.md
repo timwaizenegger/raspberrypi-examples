@@ -17,7 +17,8 @@ Each Folder contains an example script, picture, and additional information abou
   * moisture,
   * potentiometer,
   * magnet,
-  * heartbeat
+  * heartbeat,
+  * magic light cup
 
 
 ### Sensors
