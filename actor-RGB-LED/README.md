@@ -1,5 +1,6 @@
-##KY-016 RGB 5mm LED
+##KY-016 RGB 5mm LED / KY-009 RGB LED SMD 
 ![image](pic3.jpg)
+![image](pic4.jpg)
 
 Example code [here](rgb.py)
 
