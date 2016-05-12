@@ -47,5 +47,7 @@ For the temperature sensor, use this python code to convert raw values to degree
 ![image of device](images/sensor2.JPG)
 ![image of device](images/sensor3.JPG)
 ![image of device](images/sensor4.JPG)
+![image of device](images/sensor6.jpg)
+![image of device](images/sensor7.jpg)
 ![image of device](images/sensor5.jpg)
 
