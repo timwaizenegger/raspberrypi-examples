@@ -1,3 +1,8 @@
+##KY-016 RGB 5mm LED
+![image](pic3.jpg)
+
+Example code [here](rgb.py)
+
 ##Linker-Kit RGB Led
 
 ![image](rgbled.jpg)
