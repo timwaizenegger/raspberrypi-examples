@@ -35,6 +35,8 @@ The numbers disposed in the schema above are needed to inform to a given program
 * Rotary Potentiometer
 * Magnet modul
 * Heartbeat
+* knock
+* photocell
 
 
 For the temperature sensor, use this python code to convert raw values to degrees celsius:
@@ -59,3 +61,5 @@ For the temperature sensor, use this python code to convert raw values to degree
 ![image of device](images/sensor12.jpg)
 ![image of device](images/sensor13.jpg)
 ![image of device](images/sensor14.jpg)
+![image of device](images/sensor16.jpg)
+![image of device](images/sensor15.jpg)
