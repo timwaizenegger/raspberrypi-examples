@@ -14,9 +14,10 @@ Each Folder contains an example script, picture, and additional information abou
   * light, 
   * noise, 
   * acceleration, 
-  * moisture
-  * potentiometer
-  * magnet
+  * moisture,
+  * potentiometer,
+  * magnet,
+  * heartbeat
 
 
 ### Sensors
