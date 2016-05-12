@@ -18,7 +18,9 @@ Each Folder contains an example script, picture, and additional information abou
   * potentiometer,
   * magnet,
   * heartbeat,
-  * magic light cup
+  * magic light cup,
+  * knock,
+  * photocell
 
 
 ### Sensors
