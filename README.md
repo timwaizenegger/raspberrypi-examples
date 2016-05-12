@@ -16,6 +16,7 @@ Each Folder contains an example script, picture, and additional information abou
   * acceleration, 
   * moisture
   * potentiometer
+  * magnet
 
 
 ### Sensors
