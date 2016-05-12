@@ -16,7 +16,7 @@ use "raspi-config" to enable I2C interface
 
     git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
     cd Adafruit_Python_SSD1306
-    sudo setup.py install
+    sudo python setup.py install
     sudo apt-get install build-essential libi2c-dev i2c-tools python-dev libffi-dev
     sudo pip install smbus-cffi
     
