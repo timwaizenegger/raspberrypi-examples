@@ -35,6 +35,7 @@ The numbers disposed in the schema above are needed to inform to a given program
 * Rotary Potentiometer
 * Magnet modul
 * Heartbeat
+* Magic light cup
 * knock
 * photocell
 
