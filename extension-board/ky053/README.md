@@ -2,6 +2,8 @@
 
 This is based on [this guide](http://sensorkit.joy-it.net/index.php?title=KY-053_Analog_Digital_Converter).
 
+Use the board in *3,3V*.
+
 The connections should be (`ky053: board`):
 * VDD 	:	V (3,3V) 	[Pin 01]
 * GND 	: 	G
