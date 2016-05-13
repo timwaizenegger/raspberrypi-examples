@@ -1,6 +1,6 @@
 This contains info about several temperature sensors:
 * [KY-013](#ky-013)
-* [KY-028)](#ky-028)
+* [KY-028](#ky-028)
 
 ## KY-013
 
@@ -16,7 +16,7 @@ The pins for the extension board, where (`sensor: board`) - following the [examp
 
 ## KY-028
 
-![ky028](images/ky028.jpg)
+![ky028](images/ky028.JPG)
 
 The value-temperature formula used in this sensor code might need to be calibrated.
 To do that, just use the [example code](ky013.py) and read the real values, relating them to the temperature witha a thermometer.
