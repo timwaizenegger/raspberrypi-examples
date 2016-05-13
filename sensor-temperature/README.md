@@ -1,7 +1,8 @@
 This contains info about several temperature sensors:
-* [KY-013 Temperature (analogic)](#ky-013)
-* [KY-028 Temperature (analogic and digital)](#ky-028)
+* [KY-013 Temperature (analog)](#ky-013)
+* [KY-028 Temperature (analog and digital)](#ky-028)
 * [KY-015 Temperature and Humidity (digital)](#ky-015)
+* [KY-015 Temperature and Pressure (analog)](#ky-052)
 
 ## KY-013
 
@@ -38,3 +39,8 @@ The other one ([here](ky015/ky015_without_dht11.py)) does not use any library.
 * -:	G
 * (middle pin):	V
 * S:	D16
+
+## KY-052
+
+![ky052](images/ky052.JPG)
+
