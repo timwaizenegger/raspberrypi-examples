@@ -10,7 +10,7 @@ Each Folder contains an example script, picture, and additional information abou
 
 ### Extension board
 * [Linksprite analog converter](extension-board) for data about the board and reading data from analog sensors linke:
-  * temperature, 
+  * [temperature](sensor-temperature), 
   * light, 
   * noise, 
   * acceleration, 
@@ -21,7 +21,6 @@ Each Folder contains an example script, picture, and additional information abou
   * magic light cup,
   * knock,
   * photocell
-
 
 ### Sensors
 * [Buttons](sensor-button)
@@ -35,6 +34,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Tilt](sensor-tilt)
 * [Magnet](sensor-magnet)
 * [Infrared Receiver](sensor-infrared-receiver)
+* [Temperature](sensor-temperature)
 
 ### Actors
 * [Linksprite dumb buzzer](actor-linksprite-buzzer)
