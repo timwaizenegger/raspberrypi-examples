@@ -14,9 +14,13 @@ Each Folder contains an example script, picture, and additional information abou
   * light, 
   * noise, 
   * acceleration, 
-  * moisture
-  * potentiometer
-  * magnet
+  * moisture,
+  * potentiometer,
+  * magnet,
+  * heartbeat,
+  * magic light cup,
+  * knock,
+  * photocell
 
 
 ### Sensors
@@ -29,6 +33,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Obstacle Avoidance](sensor-obstacle)
 * [Vibration](sensor-vibration)
 * [Tilt](sensor-tilt)
+* [Magnet](sensor-magnet)
 
 ### Actors
 * [Linksprite dumb buzzer](actor-linksprite-buzzer)
@@ -38,6 +43,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Alphanumeric display board with 4 buttons](actor-alphanumeric-display-board)
 * [Linksprite 128x64 blue OLED display](actor-linksprite-OLED-display)
 * [RGB-LED](actor-RGB-LED)
+* [7 and 2 colors Led](actor-7_2-colors)
 
 
 
