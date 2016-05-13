@@ -21,6 +21,7 @@ Each Folder contains an example script, picture, and additional information abou
   * magic light cup,
   * knock,
   * photocell
+* [AD Converter](extension-board/ky053)
 
 ### Sensors
 * [Buttons](sensor-button)
