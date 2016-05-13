@@ -2,6 +2,8 @@
 
 Use the board in *5V*.
 
+You can use the [analogIn.py](../analogIn.py) to test the voltage output, just connect VCCa to A0 on the board.
+
 The connections should be (`ky051: board`):
 * VCCa 	:	output 3,3V (use it where you need)
 * VCCb 	: 	V (input 5V)
