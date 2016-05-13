@@ -31,7 +31,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [HD camera](sensor-HD-camera)
 * [Touch](sensor-touch)
 * [Flame](sensor-flame)
-* [Obstacle Avoidance](sensor-obstacle)
+* [Obstacle Avoidance and Tracking](sensor-obstacle)
 * [Vibration](sensor-vibration)
 * [Tilt](sensor-tilt)
 * [Magnet](sensor-magnet)
