@@ -9,8 +9,6 @@ Two version of the board have been used:
 
 You can also use the AD Converter KY-053:
 
-![ky053](images/ky053.JPG)
-
 To use it, follow the guide [here](ky053/).
 
 Also, is given a list of [sensors](#sensors-include).

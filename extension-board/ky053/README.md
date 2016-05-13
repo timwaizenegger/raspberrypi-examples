@@ -1,4 +1,6 @@
-This is based on [this guide](http://sensorkit.joy-it.net/index.php?title:KY-053_Analog_Digital_Converter).
+![ky053](../images/ky053.JPG)
+
+This is based on [this guide](http://sensorkit.joy-it.net/index.php?title=KY-053_Analog_Digital_Converter).
 
 The connections should be (`ky053: board`):
 * VDD 	:	V (3,3V) 	[Pin 01]
