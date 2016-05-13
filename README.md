@@ -34,6 +34,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Vibration](sensor-vibration)
 * [Tilt](sensor-tilt)
 * [Magnet](sensor-magnet)
+* [Infrared Receiver](sensor-infrared-receiver)
 
 ### Actors
 * [Linksprite dumb buzzer](actor-linksprite-buzzer)
@@ -44,6 +45,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Linksprite 128x64 blue OLED display](actor-linksprite-OLED-display)
 * [RGB-LED](actor-RGB-LED)
 * [7 and 2 colors Led](actor-7_2-colors)
+* [Infrared Transmitter](actor-infrared-transmitter)
 
 
 
