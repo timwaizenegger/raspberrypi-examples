@@ -10,7 +10,7 @@ Each Folder contains an example script, picture, and additional information abou
 
 ### Extension board
 * [Linksprite analog converter](extension-board) for data about the board and reading data from analog sensors linke:
-  * [temperature](sensor-temperature), 
+  * [temperature, humidity and pressure](sensor-temperature), 
   * light, 
   * noise, 
   * acceleration, 

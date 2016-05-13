@@ -1,9 +1,9 @@
 This contains info about:
-* [Sensor KY-032: Obstacle avoidance sensor](#sensor-ky-032:-obstacle-avoidance-sensor)
-* [Sensor KY-033: Tracking sensor](#sensor-ky-033:-tracking-sensor)
+* [Sensor KY-032: Obstacle avoidance sensor](#sensor-ky-032)
+* [Sensor KY-033: Tracking sensor](#sensor-ky-033)
 
 
-## Sensor KY-032: Obstacle avoidance sensor
+## Sensor KY-032
 
 ![ky032](images/ky032.jpg)
 
@@ -19,9 +19,9 @@ Pins:
 * out – obstacle signal
 * EN – no use found
 
-## Sensor KY-033: Tracking sensor
+## Sensor KY-033
 
-![ky033](images/ky033.jpg)
+![ky033](images/ky033.JPG)
 
 Theoretically this is made for tracking lines, though, through tests, it detects any close object (obstacle detection).
 
