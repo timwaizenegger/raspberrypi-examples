@@ -22,6 +22,7 @@ Each Folder contains an example script, picture, and additional information abou
   * knock,
   * photocell
 * [AD Converter](extension-board/ky053)
+* [Voltage translator](extension-board/ky051)
 
 ### Sensors
 * [Buttons](sensor-button)
