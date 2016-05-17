@@ -4,6 +4,20 @@
 
 Example code [here](rgb.py)
 
+### Code Colors
+Based on the raspberry code of [sensorkit.joy-it.net](http://sensorkit.joy-it.net/index.php?title=KY-016_RGB_5mm_LED_Modul)
+
+. |. | .
+------------ | ------------- | -------
+![red](images/1.jpg) | ![red](images/2.jpg) | ![red](images/3.jpg)
+LED_Farbe(100,0,0,1) - **RED**  |    LED_Farbe(100,50,0,1) - **ORANGE**  |  LED_Farbe(100,100,0,1) - **YELLOW**
+![red](images/4.jpg) | ![red](images/5.jpg) | ![red](images/6.jpg)
+LED_Farbe(50,100,0,1) - **LIGHT GREEN**  |    LED_Farbe(0,100,0,1) - **GREEN**  |  LED_Farbe(0,100,50,1) - **AQUA**
+![red](images/7.jpg) | ![red](images/8.jpg) | ![red](images/9.jpg)
+LED_Farbe(0,100,100,1) - **CYAN**  |    LED_Farbe(0,50,100,1) - **LIGHT BLUE**  |  LED_Farbe(0,0,100,1) - **BLUE**
+![red](images/10.jpg)| ![red](images/11.jpg) | ![red](images/12.jpg)
+LED_Farbe(50,0,100,1) - **PURPLE**  |    LED_Farbe(100,0,100,1) - **MAGENTA**  |  LED_Farbe(100,0,50,1) - **PINK**
+
 ##Linker-Kit RGB Led
 
 ![image](rgbled.jpg)
