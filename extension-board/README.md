@@ -6,8 +6,17 @@ You can find how to in [this README](../setup-raspberrypi/README.md).
 Two version of the board have been used:
 * [First version](#first-used-board-version)
 * [Second version](#second-used-board-version)
-
 Also, is given a list of [sensors](#sensors-include).
+
+You can also use the AD Converter KY-053. To use it, follow the guide [here](ky053).
+
+![ky053](images/ky053.JPG)
+
+
+Other periferics:
+* [Voltage translator](ky051)
+
+![ky051](images/ky051.JPG)
 
 ## First used board version
 
@@ -28,7 +37,7 @@ The numbers disposed in the schema above are needed to inform to a given program
 ![schema](images/description.png)
 
 ### Sensors include
-* temperature
+* [temperature](../sensor-temperature)
 * light
 * noise level
 * 3-axis accelerometer
