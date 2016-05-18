@@ -1,22 +1,18 @@
+This contains info about:
+* [Shield w/ ADC Interface](#shield)
+* [List of analog sensors](#analog-sensors)
+* [AD converter](#ad-converter)
+* [Voltage translator](ky051)
+
+## Shield
+
 To read analog values, you need to enable SPI.
 
 You can find how to in [this README](../setup-raspberrypi/README.md).
 
-
 Two version of the board have been used:
 * [First version](#first-used-board-version)
 * [Second version](#second-used-board-version)
-Also, is given a list of [sensors](#sensors-include).
-
-You can also use the AD Converter KY-053. To use it, follow the guide [here](ky053).
-
-![ky053](images/ky053.JPG)
-
-
-Other periferics:
-* [Voltage translator](ky051)
-
-![ky051](images/ky051.JPG)
 
 ## First used board version
 
@@ -36,7 +32,7 @@ The numbers disposed in the schema above are needed to inform to a given program
 ![schema](images/schema2.jpg)
 ![schema](images/description.png)
 
-### Sensors include
+## Analog Sensors
 * [temperature](../sensor-temperature)
 * light
 * noise level
@@ -48,14 +44,13 @@ The numbers disposed in the schema above are needed to inform to a given program
 * knock
 * photocell
 
-
 For the temperature sensor, use this python code to convert raw values to degrees celsius:
 
     temp = (((value * 1000) - 500)/10)
     
 
-* `analogIn.py` shows how to read the values
-* `analogInputDemo` display all 4 values in real time; useful for test/debug 
+* [`analogIn.py`](analogIn.py) shows how to read the values
+* [`analogInputDemo`](analogIn.py) display all 4 values in real time; useful for test/debug
 
 ![image of device](images/sensor1.JPG)
 ![image of device](images/sensor2.JPG)
