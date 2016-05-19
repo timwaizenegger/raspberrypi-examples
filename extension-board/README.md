@@ -1,7 +1,7 @@
 This contains info about:
 * [Shield w/ ADC Interface](#shield)
 * [List of analog sensors](#analog-sensors)
-* [AD converter](#ad-converter)
+* [AD converter](ky053)
 * [Voltage translator](ky051)
 
 ## Shield
