@@ -11,10 +11,12 @@ Steps to get running:
 sudo nano /boot/config.txt
 ```
 
-* Uncomment the line and reboot:
+* Uncomment the line:
 ```
 dtparam=i2c_arm=on
 ```
+
+* Reboot
 
 * Install
 ```
