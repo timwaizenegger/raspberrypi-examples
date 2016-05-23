@@ -37,7 +37,7 @@ temp_sensor = TemperatureSensor("temp", queue_, sleeptime, pin = 0)
 flame_sensor = FlameSensor("flame", queue_, sleeptime, pin = 27)
 #rotary_sensor = RotarySensor(thread_id="rotary", queue_, sleeptime)
 
-buzzer = ActorBuzzer(pin=15)
+buzzer = ActorBuzzer(15)
 
 def tempAlarm(*args, **kwargs):
     print ("HIGH TEMPERATURE: %s" % str(kwargs["value"]))

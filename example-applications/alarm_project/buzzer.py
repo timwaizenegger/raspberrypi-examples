@@ -5,14 +5,14 @@ import spidev
 
 
 class ActorBuzzer ():
-    def __init__(self, pin=27, frequency=50, duration=10):
+    def __init__(self, pin=27, frequency=1000, duration=100):
         self.pin = pin
         self.frequency = frequency
         self.duration = duration
 
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
-        GPIO.setup(pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+        GPIO.setup(pin, GPIO.OUT)
 
     def buzz(self):
         p = GPIO.PWM(self.pin, self.frequency)
