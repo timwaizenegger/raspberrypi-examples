@@ -2,7 +2,7 @@ This contains info about:
 * [Shield w/ ADC Interface](#shield)
 * [List of analog sensors](#analog-sensors)
 * [AD converter](ky053)
-* [Voltage translator](ky051)
+* [Level shifter](ky051)
 
 ## Shield
 
@@ -50,7 +50,7 @@ For the temperature sensor, use this python code to convert raw values to degree
     
 
 * [`analogIn.py`](analogIn.py) shows how to read the values
-* [`analogInputDemo`](analogIn.py) display all 4 values in real time; useful for test/debug
+* [`analogInputDemo`](analogInputDemo.py) display all 4 values in real time; useful for test/debug
 
 ![image of device](images/sensor1.JPG)
 ![image of device](images/sensor2.JPG)
