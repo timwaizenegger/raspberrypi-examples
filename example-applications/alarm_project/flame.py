@@ -3,8 +3,8 @@ from datetime import datetime
 from queue import Queue
 import random as rd
 
-#import RPi.GPIO as GPIO
-#import spidev
+import RPi.GPIO as GPIO
+import spidev
 
 from sensor import SensorBase
 
