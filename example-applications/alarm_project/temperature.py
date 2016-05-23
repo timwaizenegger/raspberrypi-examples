@@ -22,6 +22,6 @@ class TemperatureSensor (SensorBase):
     def _getSensorValue(self):
         #return random_temp()
         value =  readadc(self.pin)
-        volts = (value * 5.0)/1024.0
+        volts = (value * 5.0) / 1024.0
         temp = (volts - 0.5) * 100
         return temp

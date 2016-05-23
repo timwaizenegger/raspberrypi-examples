@@ -1,3 +1,5 @@
+import operator
+
 from stoppable import StoppableThread
 
 class Observer (StoppableThread): # Observer pattern (observer)
@@ -16,12 +18,14 @@ class Observer (StoppableThread): # Observer pattern (observer)
             id_ = recv["id"]
             if id_ in self.sensors:
                 sensor = self.sensors[id_]
-                if (recv["value"] >= sensor["threshold"]):
+
+                if (sensor["operator"](recv["value"], sensor["threshold"])):
                     sensor["action"](value = recv["value"], recv = recv)
 
-    def addSensor(self, sensor_id, threshold, action=None):
+    def addSensor(self, sensor_id, threshold, operator=operator.ge, action=None):
         self.sensors[sensor_id] = {
             "threshold": threshold,
+            "operator": operator,
             "action": action,
         }
 

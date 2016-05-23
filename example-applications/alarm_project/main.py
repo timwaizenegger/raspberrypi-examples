@@ -2,6 +2,7 @@ import threading
 import signal
 import sys
 import time
+import operator
 from queue import Queue
 from datetime import datetime
 
@@ -37,11 +38,11 @@ flame_sensor = FlameSensor("flame", queue_, sleeptime, pin = 27)
 
 def tempAlarm(*args, **kwargs):
     print ("HIGH TEMPERATURE: %s" % str(kwargs["value"]))
-obs.addSensor("temp", temperature_threshold, tempAlarm)
+obs.addSensor("temp", temperature_threshold, operator.ge, tempAlarm)
 
 def flameAlarm(*args, **kwargs):
     print ("ON FIRE!!!")
-obs.addSensor("flame", 1, flameAlarm)
+obs.addSensor("flame", 0,  operator.eq, flameAlarm)
 
 #obs.addSensor(thread_id="rotary_sensor", -1, action) # -1 for any positive value (0 and 1 as binary)
 
