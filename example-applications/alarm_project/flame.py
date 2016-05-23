@@ -23,5 +23,5 @@ class FlameSensor (SensorBase):
 
     def _getSensorValue(self):
         #return random_bin()
-        return GPIO.input(pin)
+        return GPIO.input(self.pin)
         

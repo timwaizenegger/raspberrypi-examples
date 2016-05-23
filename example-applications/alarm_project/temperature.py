@@ -7,6 +7,7 @@ import RPi.GPIO as GPIO
 import spidev
 
 from sensor import SensorBase
+from sensor import readadc
 
 def random_temp(midvalue=60):
     return rd.randint(midvalue - 20, midvalue + 10)
@@ -20,7 +21,7 @@ class TemperatureSensor (SensorBase):
 
     def _getSensorValue(self):
         #return random_temp()
-        value =  readadc(pd)
+        value =  readadc(self.pin)
         volts = (value * 5.0)/1024.0
         temp = (volts - 0.5) * 100
         return temp
