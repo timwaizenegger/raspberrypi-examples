@@ -3,9 +3,6 @@ import time
 from datetime import datetime
 from queue import Queue
 
-import RPi.GPIO as GPIO
-import spidev
-
 from stoppable import StoppableThread
 
 def readadc(adcnum):

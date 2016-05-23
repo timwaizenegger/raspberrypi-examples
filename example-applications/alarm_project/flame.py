@@ -1,8 +1,10 @@
 import time
 from datetime import datetime
 from queue import Queue
-
 import random as rd
+
+import RPi.GPIO as GPIO
+import spidev
 
 from sensor import SensorBase
 
@@ -20,5 +22,6 @@ class FlameSensor (SensorBase):
         GPIO.setup(pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
     def _getSensorValue(self):
+        #return random_bin()
         return GPIO.input(pin)
         
