@@ -10,7 +10,7 @@ import time
 def bin2dec(string_num):
     return str(int(string_num, 2))
 
-tempPin = 27 # S connected to D27
+tempPin = 14 # S connected to D14
 
 def read_data(pin):
     data = 0

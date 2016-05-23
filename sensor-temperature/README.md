@@ -32,15 +32,19 @@ The pins for the extension board, where (`sensor: board`) - following the [examp
 
 ![ky015](images/ky015.JPG)
 
-There are two code versions for that sensor.
-The recommended one ([here](ky015/ky015_with_dht11.py)) uses [this library](https://github.com/szazo/DHT11_Python) which is already in [here](ky015/dht11_lib/).
-The other one ([here](ky015/ky015_without_dht11.py)) does not use any library.
+There is a library build for this sensor. It already contains an example of use. Get it here:
+
+[github.com/szazo/DHT11_Python](https://github.com/szazo/DHT11_Python)
+
+
+You can also try this code  without the library (not recommended):
+
+ky015.py(ky015/ky015.py)
 
 * -:	G
 * (middle pin):	V
-* S:	D16
+* S:	D14
 
 ## KY-052
 
 ![ky052](images/ky052.JPG)
-
