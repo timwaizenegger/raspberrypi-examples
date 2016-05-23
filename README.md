@@ -10,7 +10,7 @@ Each Folder contains an example script, picture, and additional information abou
 
 ### Extension board
 * [Linksprite analog converter](extension-board) for data about the board and reading data from analog sensors linke:
-  * temperature, 
+  * [temperature, humidity and pressure](sensor-temperature), 
   * light, 
   * noise, 
   * acceleration, 
@@ -21,7 +21,8 @@ Each Folder contains an example script, picture, and additional information abou
   * magic light cup,
   * knock,
   * photocell
-
+* [AD Converter](extension-board/ky053)
+* [Voltage translator](extension-board/ky051)
 
 ### Sensors
 * [Buttons](sensor-button)
@@ -30,10 +31,12 @@ Each Folder contains an example script, picture, and additional information abou
 * [HD camera](sensor-HD-camera)
 * [Touch](sensor-touch)
 * [Flame](sensor-flame)
-* [Obstacle Avoidance](sensor-obstacle)
+* [Obstacle Avoidance and Tracking](sensor-obstacle)
 * [Vibration](sensor-vibration)
 * [Tilt](sensor-tilt)
 * [Magnet](sensor-magnet)
+* [Infrared Receiver](sensor-infrared-receiver)
+* [Temperature, humidity and pressure](sensor-temperature)
 
 ### Actors
 * [Linksprite dumb buzzer](actor-linksprite-buzzer)
@@ -44,6 +47,7 @@ Each Folder contains an example script, picture, and additional information abou
 * [Linksprite 128x64 blue OLED display](actor-linksprite-OLED-display)
 * [RGB-LED](actor-RGB-LED)
 * [7 and 2 colors Led](actor-7_2-colors)
+* [Infrared Transmitter](actor-infrared-transmitter)
 
 
 
