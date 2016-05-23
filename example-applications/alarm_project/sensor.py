@@ -3,8 +3,8 @@ import time
 from datetime import datetime
 from queue import Queue
 
-import RPi.GPIO as GPIO
-import spidev
+#import RPi.GPIO as GPIO
+#import spidev
 
 from stoppable import StoppableThread
 
@@ -30,13 +30,14 @@ class SensorBase (StoppableThread): # Observer pattern (observable)
     def run(self):
         ''' reads sensor value and adds to queue '''
         while (not self.stopped()):
-            value = _getSensorValue()
+            value = self._getSensorValue()
             self.notify_observers(value)
             time.sleep(self.__sleeptime)
     
     @abc.abstractmethod
-    def _getSensorValue(self)
+    def _getSensorValue(self):
         # CODE TO GET SENSOR VALUE
+        return
 
     def notify_observers(self, value):
         ''' adds value to the queue '''

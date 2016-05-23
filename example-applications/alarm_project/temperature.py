@@ -12,13 +12,13 @@ def random_temp(midvalue=60):
 
 class TemperatureSensor (SensorBase):
 
-   def __init__(self, thread_id, notification_queue, sleeptime, pin = 0):
+    def __init__(self, thread_id, notification_queue, sleeptime, pin = 0):
         super().__init__(thread_id, notification_queue, sleeptime) # python 3 syntax only
         self.pin = pin
 
     def _getSensorValue(self):
-    	return random_temp
-        '''value =  readadc(pd)
+        #return random_temp()
+        value =  readadc(pd)
         volts = (value * 5.0)/1024.0
         temp = (volts - 0.5) * 100
-        return temp'''
+        return temp
