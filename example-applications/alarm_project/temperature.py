@@ -18,6 +18,8 @@ class TemperatureSensor (SensorBase):
     def __init__(self, thread_id, notification_queue, sleeptime, pin = 0):
         super().__init__(thread_id, notification_queue, sleeptime) # python 3 syntax only
         self.pin = pin
+        self.spi = spidev.SpiDev()
+        self.spi.open(0,0)
 
     def _getSensorValue(self):
         #return random_temp()

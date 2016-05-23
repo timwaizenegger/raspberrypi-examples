@@ -3,9 +3,13 @@ import time
 from datetime import datetime
 from queue import Queue
 
+import spidev
+
 from stoppable import StoppableThread
 
 def readadc(adcnum):
+    spi = spidev.SpiDev()
+    spi.open(0,0)
     # read SPI data from MCP3004 chip, 4 possible adc’s (0 thru 3)
     if ((adcnum > 3) or (adcnum < 0)):
         return-1

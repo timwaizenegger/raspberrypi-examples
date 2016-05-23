@@ -10,6 +10,7 @@ from temperature import TemperatureSensor
 from flame import FlameSensor
 from rotary import RotarySensor
 from observer import Observer
+from buzzer import ActorBuzzer
 
 
 threads = []
@@ -36,12 +37,16 @@ temp_sensor = TemperatureSensor("temp", queue_, sleeptime, pin = 0)
 flame_sensor = FlameSensor("flame", queue_, sleeptime, pin = 27)
 #rotary_sensor = RotarySensor(thread_id="rotary", queue_, sleeptime)
 
+buzzer = ActorBuzzer(pin=15)
+
 def tempAlarm(*args, **kwargs):
     print ("HIGH TEMPERATURE: %s" % str(kwargs["value"]))
+    buzzer.buzz()
 obs.addSensor("temp", temperature_threshold, operator.ge, tempAlarm)
 
 def flameAlarm(*args, **kwargs):
     print ("ON FIRE!!!")
+    buzzer.buzz()
 obs.addSensor("flame", 0,  operator.eq, flameAlarm)
 
 #obs.addSensor(thread_id="rotary_sensor", -1, action) # -1 for any positive value (0 and 1 as binary)
