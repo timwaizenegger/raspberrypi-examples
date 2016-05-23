@@ -6,18 +6,18 @@ import random as rd
 
 from sensor import SensorBase
 
-def random_temp(midvalue=60):
-    return rd.randint(midvalue - 20, midvalue + 10)
+def random_bin():
+    return rd.randint(0, 1)
 
 
 class TemperatureSensor (SensorBase):
 
-   def __init__(self, thread_id, notification_queue, sleeptime, pin = 0):
+   def __init__(self, thread_id, notification_queue, sleeptime, pin = 27):
         super().__init__(thread_id, notification_queue, sleeptime) # python 3 syntax only
         self.pin = pin
 
     def _getSensorValue(self):
-    	return random_temp
+    	return random_bin
         '''value =  readadc(pd)
         volts = (value * 5.0)/1024.0
         temp = (volts - 0.5) * 100
