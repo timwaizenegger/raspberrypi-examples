@@ -38,6 +38,7 @@ Then:
 
     git clone https://github.com/jgarff/rpi_ws281x.git
     cd rpi_ws281x.git
+    sudo apt-get install scons swig
     sudo scons
     cd python
     sudo python ez_setup.py
