@@ -32,9 +32,9 @@ def readadc(adcnum):
 while True:
 	value=readadc(pd)
 	volts=(value*3.3)/1024
-	#print("%4d/1023 => %5.3f V" % (value, volts))
-	temp = (((value * 1000) - 500)/10)
-	print temp
+	print("%4d/1023 => %5.3f V" % (value, volts))
+	#temp = (((value * 1000) - 500)/10)
+	#print temp
 	time.sleep(0.1)
 
 

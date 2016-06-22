@@ -3,6 +3,9 @@
 This is based on this guide:
 [sensorkit.joy-it.net/index.php?title=KY-051_Voltage_Translator_/_Level_Shifter](http://sensorkit.joy-it.net/index.php?title=KY-051_Voltage_Translator_/_Level_Shifter)
 
+This is a [Level shifter](https://en.wikipedia.org/wiki/Logic_level), not to be confused with a [Voltage Regulator](https://en.wikipedia.org/wiki/Voltage_regulator).
+>"A level shifter connects one digital circuit that uses one logic level to another digital circuit that uses another logic level."
+
 You can use the [`analogIn.py`](../analogIn.py) to test the values output.
 
 The KY-051 follows the ratio 3,3V:5V (A:B).
