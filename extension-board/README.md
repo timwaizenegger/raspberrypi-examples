@@ -34,7 +34,7 @@ The numbers disposed in the schema above are needed to inform to a given program
 
 ## Analog Sensors
 * [temperature](../sensor-temperature)
-* light
+* light (see [linksprite documentation](http://linksprite.com/wiki/index.php5?title=LDR_Module))
 * noise level
 * 3-axis accelerometer
 * Rotary Potentiometer
