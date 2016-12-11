@@ -2,12 +2,7 @@ import math
 import RPi.GPIO as IO
 import threading
 from time import sleep, localtime
-from tqdm import tqdm
-
-try:
-    import thread
-except ImportError:
-    import _thread as thread
+# from tqdm import tqdm
 
 # IO.setwarnings(False)
 IO.setmode(IO.BCM)
@@ -18,8 +13,7 @@ HexDigits = [0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d,
 ADDR_AUTO = 0x40
 ADDR_FIXED = 0x44
 STARTADDR = 0xC0
-
-DEBUG = False
+# DEBUG = False
 
 
 class TM1637:
@@ -160,7 +154,7 @@ class TM1637:
         return data
 
     def clock(self, military_time):
-        """Modified from:
+        """Clock script modified from:
             https://github.com/johnlr/raspberrypi-tm1637"""
         self.ShowDoublepoint(True)
         while (not self.__stop_event.is_set()):
@@ -174,16 +168,12 @@ class TM1637:
             d3 = t.tm_min % 10
             digits = [d0, d1, d2, d3]
             self.Show(digits)
-            # Optional visual feedback of running alarm:
-            if DEBUG:
-                print digits
-                for i in tqdm(range(60 - t.tm_sec)):
-                    if (not self.__stop_event.is_set()):
-                        sleep(1)
-            else:
-                for i in range(60 - t.tm_sec):
-                    if (not self.__stop_event.is_set()):
-                        sleep(1)
+            # # Optional visual feedback of running alarm:
+            # print digits
+            # for i in tqdm(range(60 - t.tm_sec)):
+            for i in range(60 - t.tm_sec):
+                if (not self.__stop_event.is_set()):
+                    sleep(1)
 
     def StartClock(self, military_time=True):
         # Stop event based on: http://stackoverflow.com/a/6524542/3219667
@@ -236,21 +226,4 @@ if __name__ == "__main__":
     display.SetBrightness(0.3)
     sleep(0.3)
 
-    try:
-        print "Starting clock in the background (press CTRL + C to stop):"
-        display.StartClock(military_time=False)
-        print 'Continue Python script and tweak display!'
-        sleep(5)
-        display.ShowDoublepoint(False)
-        sleep(5)
-        loops = 3
-        while loops > 0:
-            for i in range(0, 10):
-                display.SetBrightness(i / 10.0)
-                sleep(0.5)
-            loops -= 1
-        display.StopClock()
-        thread.interrupt_main()
-    except KeyboardInterrupt:
-        print "Properly closing the clock and open GPIO pins"
-        display.cleanup()
+    # See clock.py for how to use the clock functions!
