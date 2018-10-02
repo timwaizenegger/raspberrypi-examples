@@ -5,6 +5,7 @@ Each Folder contains an example script, picture, and additional information abou
 
 ## System setup
 [Setup tutorials](setup-raspberrypi) contains information for installing, updating, reseting and issue solving on the OS Raspbian.
+**(https://www.youtube.com/watch?v=RpseX2ylEuw&list=PLQVvvaa0QuDesV8WWHLLXW_avmTzHmJLv)**
 
 ## List of devices 
 
